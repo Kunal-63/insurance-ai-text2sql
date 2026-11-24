@@ -1,0 +1,59 @@
+{
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "OLLAMA": {
+    "main_model": "qwen2.5-coder:14b-instruct-q8_0",
+    "base_url": "http://localhost:11434",
+    "temperature": 0.05,
+    "num_ctx": 20000
+  },
+  "GREETINGS": {
+    "main_model": "llama3.2:3b-instruct-q4_0",
+    "base_url": "http://localhost:11434",
+    "temperature": 0.02,
+    "num_ctx": 8192
+  },
+  "KRUTRIM": {
+    "main_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "base_url": "https://api.studio.nebius.com/v1",
+    "temperature": 0.05,
+    "api_key": "YOUR_NEBIUS_OR_OPENAI_API_KEY",
+    "num_ctx": 20000,
+    "instruction_model": "meta-llama/Llama-3.3-70B-Instruct",
+    "instruction_base_url": "https://api.studio.nebius.com/v1",
+    "instruction_temperature": 0.6,
+    "instruction_num_ctx": 8192,
+    "instruction_api_key": "YOUR_INSTRUCTION_API_KEY"
+  },
+  "DPWS_DATABASE": {
+    "db_password": "YOUR_BASE64_ENCODED_DB_PASSWORD",
+    "db_username": "root",
+    "db_host": "127.0.0.1",
+    "db_port": 3306,
+    "db_name": "insurance_db"
+  },
+  "MODEL": 1,
+  "huggingface_token": "YOUR_HUGGINGFACE_TOKEN",
+  "langsmith_api_key": "YOUR_LANGSMITH_API_KEY",
+  "langsmith_project": "Insurance_Text_2_SQL",
+  "langsmith_endpoint": "https://api.smith.langchain.com",
+  "langsmith_tracing": "false",
+  "flag_store_query": 1,
+  "flag_ollama_config": 1,
+  "faqs_documents_path": "faqs.xlsx",
+  "vector_db": 2,
+  "SERVER_IP_ADDRESS": "0.0.0.0",
+  "SERVER_PORT_ADDRESS": 5559,
+  "NUMBER_OF_MODEL_PIPELINE": 1,
+  "MAX_NUMBER_OF_PIPELINES": 8,
+  "API_BASED_QUERY_RESPONSE": 0,
+  "SOURCE_DIRECTORY_LOCATION": "json",
+  "FAQS_CHROMADB_DISTANCE": 0.40,
+  "FAQS_THRESHOLD": 0.90,
+  "API_THRESHOLD": 0.58,
+  "API_CHROMADB_DISTANCE": 0.40,
+  "APPROACH": 1,
+  "MAINTAIN_CONVERSATION_HISTORY_COUNT": 10,
+  "CRM_IP_ADDRESS": "127.0.0.1",
+  "CRM_PORT": "10022"
+}

@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.save
+*.bak
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment Variables & Secrets
+.env
+*.env
+.env.*
+!.env.example
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+Chatbot_Text_2_SQL.iml
+
+# Vector Database Local Files
+VectorDB_files/
+chromadb/
+qdrant_storage/
+
+# Databases & SQLite
+*.db
+*.sqlite
+*.sqlite3
+memory.db
+test.db
+
+# Logs & Runtime Storage
+logs/logs/*
+logs/root.log
+logs/config/*
+logs/mappinglist/*
+app_data/
+Chatbot_data/
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
